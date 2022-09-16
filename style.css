@@ -22,7 +22,7 @@ body {
     background-color: #f7f7f7;
     /* background-color: red; */
     padding: 20px 40px;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     /* height: 80px; */
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 article {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 }
 
 /* smaller element */
@@ -335,3 +335,28 @@ related-link:link {
     flex-basis: 300px;
     flex: 0 0 300px;
 } */
+
+/* CSS Grid layout */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+    align-items: top;
+}
+
+.main-header {
+    grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+    background-color: red;
+    grid-column: 1/-1;
+}
